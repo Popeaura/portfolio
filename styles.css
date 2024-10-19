@@ -67,7 +67,16 @@ li a:hover{
 }
 .content-container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.img-container img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
 .antique-white {
     color: antiquewhite;
 }
