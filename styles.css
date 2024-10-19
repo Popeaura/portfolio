@@ -15,9 +15,13 @@
 body{background-color:black;
 
 }
+.logo{
+    padding-left: 20px;
+}
 
 /* nav start */
 nav{
+    border-top:2px solid gray;
     display: flex;
     justify-content:space-between;
     background-color: ;
@@ -54,12 +58,15 @@ li a:hover{
 
     /*flex box*/
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     color: blueviolet;
     position: relative;
     padding: 20px;
+}
+.content-container{
+    display: flex;
 }
 .antique-white {
     color: antiquewhite;
@@ -91,4 +98,6 @@ li a:hover{
     border-radius: 8px;
     cursor: pointer;
 }
+
+
 /* header end */
