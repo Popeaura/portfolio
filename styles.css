@@ -12,7 +12,7 @@
 }
 
 /* body styling */
-body{background-color:purple;
+body{background-color:black;
 
 }
 
@@ -20,7 +20,7 @@ body{background-color:purple;
 nav{
     display: flex;
     justify-content:space-between;
-    background-color: brown;
+    background-color: ;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
@@ -38,7 +38,57 @@ li a{
 }
 
 li a:hover{
-    border-bottom : 2px solid  black;
+    color: gold;
+    border-bottom : 2px solid gold;
 }
 
 /* nav end */
+
+
+/* header start */
+.header{
+    background-size: cover;
+    height: 50vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+    /*flex box*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: blueviolet;
+    position: relative;
+    padding: 20px;
+}
+.antique-white {
+    color: antiquewhite;
+}
+
+.gold {
+    color: gold;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; 
+    margin-top: 10px; 
+}
+
+.btn-1{
+    padding: 5px 5px;
+    background-color:goldenrod;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-2{
+    padding: 5px 5px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* header end */
