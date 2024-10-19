@@ -61,9 +61,8 @@ li a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: blueviolet;
     position: relative;
-    padding: 20px;
+ 
 }
 .content-container{
     display: flex;
@@ -72,9 +71,10 @@ li a:hover{
 }
 
 .img-container img {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     border-radius: 50%;
+
 }
 
 .antique-white {
@@ -107,6 +107,46 @@ li a:hover{
     border-radius: 8px;
     cursor: pointer;
 }
-
-
 /* header end */
+/*About start*/
+.one{
+    border-top: 0px;
+}
+.about{
+    color: #fff;
+
+
+
+}
+.label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+  
+  .about p {
+    margin-bottom: 15px; 
+  }
+  
+  .about{
+    background-size: cover;
+    height: 50vh;
+    font-weight: normal;
+
+    /* flex box*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .cv{
+    background-color: gold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+  }
+ /* skills */
+ .skills{
+    color: #fff;
+ }
