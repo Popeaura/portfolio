@@ -16,7 +16,7 @@ body{background-color:black;
 
 }
 .logo{
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 /* nav start */
@@ -28,11 +28,13 @@ nav{
     padding-top: 15px;
     padding-bottom: 15px;
     color: #fff;
+
 }
 
  li{
     display: inline;
     list-style: none;
+    padding-left: 5px;
 }
 li a{
     color: #fff;
@@ -71,6 +73,7 @@ li a:hover{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-left: 30px;
  
 }
 .content-container{
@@ -154,52 +157,53 @@ li a:hover{
     border-radius: 8px;
     padding: 8px;
   }
-
 /* Skills Section */
 .skills {
-    background-size: cover;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 20px; /* Add padding around the section */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 50px; /* Space between the columns */
+  padding: 50px 0; /* Adjust padding for better spacing */
+}
+
+/* Styling for each skill and bar */
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill p {
+  width: 300px; 
+  margin-right: 200px;
+  font-size: 16px;
+  font-weight: bold; /* Make skill names bold */
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: rgb(40, 40, 40); /* Darker background for skill bar */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: gold;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
   .list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 50px; /* Space between the columns */
-    padding-left: 10px;
+      grid-template-columns: 1fr; /* Stack skills on smaller screens */
   }
-  
-  /* Styling for each skill and bar */
-  .skill {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .skill p {
-    width: 100px; 
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  
-  .skill-bar {
-    width: 100%;
-    background-color: rgb(18, 18, 18);
-    border-radius: 10px;
-    overflow: hidden;
-    height: 20px;
-  }
-  
-  .skill-level {
-    height: 100%;
-    background-color: gold;
-    border-radius: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .list {
-        grid-template-columns: 1fr; /* Stack skills */
-    }
-  }
+}
