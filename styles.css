@@ -46,6 +46,15 @@ li a:hover{
     border-bottom : 2px solid gold;
 }
 
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; /* Stack items */
+      align-items: center;
+  }
+  nav li {
+      margin: 10px 0;
+  }
+}
 /* nav end */
 
 
@@ -102,7 +111,6 @@ li a:hover{
 .btn-2{
     padding: 5px 5px;
     background-color: black;
-    border: none;
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -146,6 +154,7 @@ li a:hover{
     border-radius: 8px;
     padding: 8px;
   }
+
 /* Skills Section */
 .skills {
     background-size: cover;
@@ -156,14 +165,10 @@ li a:hover{
   }
   
   .list {
-    padding-left: 20px;
-  }
-  
-  .skills h1 {
-    text-align: center;
-  }
-  .skills p {
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 50px; /* Space between the columns */
+    padding-left: 10px;
   }
   
   /* Styling for each skill and bar */
@@ -171,29 +176,30 @@ li a:hover{
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-
   }
   
   .skill p {
-    width: 1000px;
+    width: 100px; /* Adjust width based on space */
     margin-right: 10px;
-    padding-top: 10px;
     font-size: 16px;
-    width: 100px;
-    height: 10px;
   }
   
   .skill-bar {
-    width: 80%;
-    background-color:rgb(53, 53, 53);
+    width: 100%;
+    background-color: rgb(18, 18, 18);
     border-radius: 10px;
-    overflow:hidden;
+    overflow: hidden;
     height: 20px;
   }
   
   .skill-level {
     height: 100%;
     background-color: gold;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   
+  @media (max-width: 768px) {
+    .list {
+        grid-template-columns: 1fr; /* Stack skills */
+    }
+  }
