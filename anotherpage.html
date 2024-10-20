@@ -1,48 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="page.css">
-    <title>portfolio</title>
-  </head>
-  <body>
-      <!--nav start-->
-      <nav>
-        <h3 class="logo">Logo </h3>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><a href="">Projects</a></li>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--nav start-->
+    <nav>
+      <h3 class="home"><a href="index.html"><img src="Images./home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="home"></h3></a>
+      <ul>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
         </ul>
-      </nav>
+    </nav>
     <!--nav end-->
-    <h1>Hello</h1>
-    <p>My name is Pope Ahura</p>
-    <p>Welcome to my personal site</p>
-    <section>
-      <h1>Checkout my photography</h1><hr>
-      <img src="Images./Astro.jpeg" width="200px" height="200px">
-      <img src="Images./celeb.jpeg" width="200px" height="200px">
-      <img src="Images./one.jpeg" width="200px" height="200px">
-      <img src="Images./Two.jpeg" width="200px" height="200px">
-      <img src="Images./smoke.jpg" width="200px" height="200px">
-      <img src="Images./run.jpeg" width="200px"height="200px">
+
+    <!--Resume-->
+    <section id="resume">
+        <header class="header">
+            <div class="content-container">
+                <h1 class="main-h">
+                    <small><p style="color: goldenrod;">Hello!</p></small>
+                    <p>
+                        <span class="antique-white">here </span>
+                        <span class="gold">is my </span>
+                    </p>
+                    <p class="gold">Resume</p>
+                </h1>
+                <div class="button-container">
+                    <button id="#contacts" class="btn-1">Hire Me</button>
+                    <button class="btn-2">My Works</button>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
+            </div>
+        </header>
     </section>
-    <form> <input type="text"placeholder="name"/><br>
-      <form> <input type="email"placeholder="Email"/><br>
-       <input type="password"placeholder="Password"/><br>
-       <section id="my-story">
-        <h1>Follow me on social Media</h1>
-            <ol>
-              <li><a href="https://www.instagram.com/direct/t/6098481093509849/">Instagram</a></li>
-              <li><a href="https://x.com/home">Twitter</a></li>
-              <li><a href="https://github.com/Popeaura/Start_G">GitHub</a></li>
-    
-              </li>
-            </ol>
-        <button>submit</button>
-    </form>
-  </body>
+
+    <!--services-->
+    <section id="services">
+        <nav class="one">
+            <h3 class="logo">Luma</h3>
+            <ul>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <section class="about">
+            <div class="img-container">
+                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
+            </div>
+            <div class="about-1">
+                <h1>About Me</h1><br><br>
+                <p style="color: gray">
+                    I'm Luma, a Fullstack Web Developer driven by a passion for building impactful and user-friendly web solutions.
+                </p><br><br>
+                <p>
+                    <span class="label">Name :</span>
+                    <span style="color: gray;">Benedict</span>   <span style="color: gray;">Ahura</span>
+                </p>
+                <p>
+                    <span class="label">Date Of Birth :</span>
+                    <span style="color: gray;">April 21, 2005</span>
+                </p>
+                <p>
+                    <span class="label">Email:</span>
+                    <span style="color: gray;">popeahura@gmail.com</span>
+                </p>
+                <p>
+                    <span class="label">Phone:</span>
+                    <span style="color: gray;">0721174088</span>
+                </p>
+                <p>
+                    <span class="gold">6</span>
+                    <span style="color: gray;">Projects completed</span>
+                </p>
+                <button class="cv">Download CV</button>
+            </div>
+        </section>
+    </section>
+
+    <!--Skills-->
+    <section id="skills">
+        <div class="skills">
+            <h1 style="text-align: center;">Skills</h1>
+            <br>
+            <span style="color: gray;">
+                <p style="text-align: center;">
+                    <small>
+                        I’m a passionate Fullstack Web Developer with a strong foundation in databases and cybersecurity, focusing on creating dynamic and user-friendly web solutions.
+                    </small>
+                </p>
+            </span>
+            <br><br>
+            <div class="list">
+                <div class="skill" aria-label="JavaScript skill level">
+                    <p>JavaScript</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill" aria-label="CSS skill level">
+                    <p>CSS</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill" aria-label="HTML skill level">
+                    <p>HTML</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill" aria-label="MySQL skill level">
+                    <p>MySQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill" aria-label="Node.js skill level">
+                    <p>Node.js</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill" aria-label="Python skill level">
+                    <p>Python</p>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="projects">
+        <header class="header">
+            <div class="content-container">
+                <h1 class="main-h">
+                    <small><p style="color: goldenrod;">Hello!</p></small>
+                    <p>
+                        <span class="antique-white"> Finally here </span>
+                        <span class="gold">Are my </span>
+                    </p>
+                    <p class="gold">Projects</p>
+                </h1>
+                <div class="button-container">
+                    <button id="#contacts" class="btn-1">Hire Me</button>
+                    <button class="btn-2">My Works</button>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
+            </div>
+        </header>
+    </section>
+
+    <!--Contacts-->
+    <section id="contacts">
+        <nav class="one">
+            <h3 class="logo">Luma</h3>
+            <ul>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav><br><br><br>
+        <section>
+            <!-- Contact details or form can go here -->
+        </section>
+    </section>
+</body>
 </html>
