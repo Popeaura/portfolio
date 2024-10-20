@@ -146,7 +146,52 @@ li a:hover{
     border-radius: 8px;
     padding: 8px;
   }
- /* skills */
- .skills{
+/* Skills Section */
+.skills {
+    background-size: cover;
     color: #fff;
- }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .list {
+    padding-left: 20px;
+  }
+  
+  .skills h1 {
+    text-align: center;
+  }
+  .skills p {
+    
+  }
+  
+  /* Styling for each skill and bar */
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+  }
+  
+  .skill p {
+    width: 1000px;
+    margin-right: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+  
+  .skill-bar {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow:hidden;
+    height: 20px;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background-color: gold;
+    border-radius: 20px;
+  }
+  
