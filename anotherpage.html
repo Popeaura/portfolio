@@ -2,183 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Resume, Services, Projects, Contacts</title>
+    <link rel="stylesheet" href="page.css">
 </head>
 <body>
-    <!--nav start-->
-    <nav>
-      <h3 class="home"><a href="index.html"><img src="Images./home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="home"></h3></a>
-      <ul>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </nav>
-    <!--nav end-->
-
-    <!--Resume-->
+    <!-- Resume Section -->
     <section id="resume">
-        <header class="header">
-            <div class="content-container">
-                <h1 class="main-h">
-                    <small><p style="color: goldenrod;">Hello!</p></small>
-                    <p>
-                        <span class="antique-white">here </span>
-                        <span class="gold">is my </span>
-                    </p>
-                    <p class="gold">Resume</p>
-                </h1>
-                <div class="button-container">
-                    <button id="#contacts" class="btn-1">Hire Me</button>
-                    <button class="btn-2">My Works</button>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
-            </div>
-        </header>
+        <h2>Resume</h2>
+        <p>Below is a summary of my professional journey and qualifications:</p>
+        <ul>
+            <li><strong>Fullstack Developer</strong> - 2024, Power Learn Project</li>
+            <li><strong>Web Development Intern</strong> - 2023, Tunapanda Institute</li>
+            <li><strong>Volunteer</strong> - Friends Of Love Kibera</li>
+            <li><strong>Skills:</strong> HTML, CSS, JavaScript, Python, Node.js, MySQL, Git</li>
+        </ul>
+        <button class="cv">Download Full CV</button>
     </section>
 
-    <!--services-->
-    <section id="services">
-        <nav class="one">
-            <h3 class="logo">Luma</h3>
-            <ul>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
-
-        <section class="about">
-            <div class="img-container">
-                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
-            </div>
-            <div class="about-1">
-                <h1>About Me</h1><br><br>
-                <p style="color: gray">
-                    I'm Luma, a Fullstack Web Developer driven by a passion for building impactful and user-friendly web solutions.
-                </p><br><br>
-                <p>
-                    <span class="label">Name :</span>
-                    <span style="color: gray;">Benedict</span>   <span style="color: gray;">Ahura</span>
-                </p>
-                <p>
-                    <span class="label">Date Of Birth :</span>
-                    <span style="color: gray;">April 21, 2005</span>
-                </p>
-                <p>
-                    <span class="label">Email:</span>
-                    <span style="color: gray;">popeahura@gmail.com</span>
-                </p>
-                <p>
-                    <span class="label">Phone:</span>
-                    <span style="color: gray;">0721174088</span>
-                </p>
-                <p>
-                    <span class="gold">6</span>
-                    <span style="color: gray;">Projects completed</span>
-                </p>
-                <button class="cv">Download CV</button>
-            </div>
-        </section>
+    <!-- Service Section -->
+    <section id="service">
+        <h2>Services</h2>
+        <p>I offer the following services:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Crafting responsive, user-friendly websites.</li>
+            <li><strong>UI/UX Design:</strong> Designing intuitive user interfaces.</li>
+            <li><strong>Database Management:</strong> SQL and NoSQL database setup and maintenance.</li>
+            <li><strong>Cybersecurity Consultation:</strong> Assessing and improving web security.</li>
+        </ul>
+        <p>Interested? <a href="#contact">Get in touch!</a></p>
     </section>
 
-    <!--Skills-->
-    <section id="skills">
-        <div class="skills">
-            <h1 style="text-align: center;">Skills</h1>
-            <br>
-            <span style="color: gray;">
-                <p style="text-align: center;">
-                    <small>
-                        I’m a passionate Fullstack Web Developer with a strong foundation in databases and cybersecurity, focusing on creating dynamic and user-friendly web solutions.
-                    </small>
-                </p>
-            </span>
-            <br><br>
-            <div class="list">
-                <div class="skill" aria-label="JavaScript skill level">
-                    <p>JavaScript</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill" aria-label="CSS skill level">
-                    <p>CSS</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill" aria-label="HTML skill level">
-                    <p>HTML</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="skill" aria-label="MySQL skill level">
-                    <p>MySQL</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill" aria-label="Node.js skill level">
-                    <p>Node.js</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 70%;"></div>
-                    </div>
-                </div>
-                <div class="skill" aria-label="Python skill level">
-                    <p>Python</p>
-                    <div class="skill-bar">
-                        <div class="skill-level" style="width: 65%;"></div>
-                    </div>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>TeleMed Platform</h3>
+                <p>A comprehensive telemedicine platform with user authentication, appointment booking, and doctor scheduling.</p>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio showcasing my skills and projects in web development and design.</p>
+            </div>
+            <div class="project">
+                <h3>AgriTech Dashboard</h3>
+                <p>A data-driven platform that helps farmers track crop yield and manage resources efficiently.</p>
             </div>
         </div>
     </section>
 
-    <!--Projects-->
-    <section id="projects">
-        <header class="header">
-            <div class="content-container">
-                <h1 class="main-h">
-                    <small><p style="color: goldenrod;">Hello!</p></small>
-                    <p>
-                        <span class="antique-white"> Finally here </span>
-                        <span class="gold">Are my </span>
-                    </p>
-                    <p class="gold">Projects</p>
-                </h1>
-                <div class="button-container">
-                    <button id="#contacts" class="btn-1">Hire Me</button>
-                    <button class="btn-2">My Works</button>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="Images./IMG_20240821_182216_902-removebg-preview.png" alt="me">
-            </div>
-        </header>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have any questions or want to work with me? Feel free to reach out!</p>
+        <form action="submit-form-endpoint" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
-    <!--Contacts-->
-    <section id="contacts">
-        <nav class="one">
-            <h3 class="logo">Luma</h3>
-            <ul>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav><br><br><br>
-        <section>
-            <!-- Contact details or form can go here -->
-        </section>
-    </section>
 </body>
 </html>
