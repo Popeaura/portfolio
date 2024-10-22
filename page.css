@@ -6,10 +6,31 @@ body {
     margin: 0;
     padding: 0;
 }
+nav{
+    border-top: gray;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding-left:15px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+li a:hover{
+    color: #ffd93d;
+    border-bottom: solid #ffd93d;
+}
 
 h2 {
     text-align: center;
-    color: #ff8400;
+    color: #fff;
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -18,7 +39,7 @@ section {
     padding: 50px;
     margin: 20px auto;
     width: 80%;
-    background-color: #fff;
+    background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -40,7 +61,7 @@ button.cv {
     padding: 10px 20px;
     background-color: #ffd93d;
     border: none;
-    color: #4f200d;
+    color: gray;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
