@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color:rgba(0,0,0); 
-    color: #4f200d;
+    color:gray;
     margin: 0;
     padding: 0;
 }
@@ -61,7 +61,7 @@ button.cv {
     padding: 10px 20px;
     background-color: #ffd93d;
     border: none;
-    color: gray;
+    color: rgb(11, 11, 11);
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -98,7 +98,7 @@ button.cv:hover {
 }
 
 .project h3 {
-    color: #ff8400;
+    color: gray;
     margin-bottom: 10px;
     font-size: 1.5em;
 }
@@ -118,7 +118,7 @@ form {
 form label {
     margin-top: 10px;
     font-weight: bold;
-    color: #4f200d;
+    color: gray;
 }
 
 form input, form textarea {
@@ -135,7 +135,7 @@ form button {
     padding: 10px 20px;
     background-color: #ff8400;
     border: none;
-    color: #fff;
+    color: black;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
