@@ -1,34 +1,36 @@
 #resume {
     background-size: cover;
-    height: 50vh;
+    height: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     
     /* Flexbox settings */
     display: flex;
-    justify-content: flex-start; 
-    align-items: center;
+    justify-content: flex-start; /* Align items to the left side */
+    align-items: flex-start;
     padding: 30px;
 }
-.container{
+
+.container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Keep image and content side by side */
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack text content vertically */
+    max-width: 600px; /* Limit width for content */
 }
 
 .img-container {
     margin-left: 20px; /* Add some space between content and image */
 }
+
 .img-container img {
     max-width: 350px;
     height: auto;
     border-radius: 50%;
-}
-
-
-.content {
-    max-width: 600px; /* Control the width of the content area */
-    text-align: left; /* Ensure the text is aligned to the left */
 }
