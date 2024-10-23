@@ -3,8 +3,13 @@ body{
     color: white;
 }
 nav{
+    border-top:2px solid gray;
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+
 }
 
 li{
@@ -48,19 +53,70 @@ li a:hover{
 
 .content {
     display: flex;
-    flex-direction: column; /* Stack text content vertically */
-    max-width: 600px; /* Limit width for content */
-    background-color: darkgoldenrod;
-    padding: 20px;
-    border: 1px solid ;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: goldenrod; 
+    padding: 40px;
+    border: 2px solid antiquewhite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #4F200D; 
+    border-radius: 10px;
 }
 
-.img-container {
-    margin-left: 20px; /* Add some space between content and image */
+/* Services Section */
+#services {
+    background-color: black;
+    color: white; 
+    padding: 50px 0; 
 }
 
-.img-container img {
-    max-width: 350px;
-    height: auto;
-    border-radius: 50%;
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 0 20px;
+}
+
+h2 {
+    color: gold; 
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; /* Space between services */
+}
+
+.service-item {
+    background-color: rgba(40, 40, 40, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Lift the service card on hover */
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: gold; 
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #F6F1E9; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }
