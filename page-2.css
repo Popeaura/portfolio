@@ -39,7 +39,6 @@ li a:hover{
 
 .services-container {
     max-width: 1200px;
-    margin: 0 auto; 
     text-align: center; 
     padding: 0 20px;
 }
@@ -99,7 +98,6 @@ h2 {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    
 }
 
 .resume-container {
@@ -184,4 +182,31 @@ h3, h4{
 
 img{
     width: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #fff; 
+    font-size: 18px; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links img {
+    width: 24px; 
+    height: 24px;
 }
