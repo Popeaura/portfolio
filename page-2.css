@@ -94,12 +94,22 @@ h2 {
     padding: 50px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
 }
 
 .resume-container {
     display:grid;
     grid-template-columns: repeat(2, 1fr); 
-    gap: 40px; 
+    gap: 40px;
+    background-color: rgba(40, 40, 40, 0.9); 
+    padding: 20px 40px;
+    border-radius: 8px;
+    max-width: 800px;
 }
 
 .resume-item h2 {
@@ -152,7 +162,7 @@ h2 {
         font-size: 2rem;
     }
 }
-footer{
+#footer{
     background-color: rgba(40, 40, 40, 0.9); 
     padding: 20px 40px;
     border-radius: 8px;
