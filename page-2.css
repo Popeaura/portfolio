@@ -166,3 +166,12 @@ h3, h4{
     color: #FFD93D;
     margin-bottom: 2px solid ;
 }
+
+.footer-bottom{
+    border-top:2px solid #FF8400;
+    text-align: center;
+}
+
+img{
+    width: 30px;
+}
