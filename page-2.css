@@ -136,75 +136,10 @@ h2 {
         grid-template-columns: 1fr; /* Stack on small screens */
     }
 }
-/* Projects Section */
-#projects {
-    background-color: rgba(40, 40, 40, 0.9);  */
-    padding: 60px 20px;
-}
 
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    color: #4F200D; /* Darker text color */
-    margin-bottom: 40px;
-}
-
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for projects */
-    gap: 30px; /* Space between projects */
-}
-
-.project-item {
-    background-color: #FFD93D; /* Gold background */
-    padding: 30px;
-    border: 2px solid #FF8400; /* Border color */
-    border-radius: 12px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add some shadow */
-    text-align: center;
-}
-
-.project-item h3 {
-    font-size: 22px;
-    color: #4F200D; /* Darker text for titles */
-    margin-bottom: 15px;
-}
-
-.project-item p {
-    font-size: 16px;
-    color: #4F200D; /* Darker text for descriptions */
-    margin-bottom: 20px;
-}
-
-.project-item .project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #FF8400; /* Button background */
-    color: #fff; /* Button text color */
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-}
-
-.project-item .project-link:hover {
-    background-color: #4F200D; /* Darker color on hover */
-}
-
-.project-item:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow */
-}
-
-@media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr; /* Stack projects on small screens */
-    }
-}
-
+/* footer */
 #footer {
-   background-color: #4F200D; 
+    background-color: rgba(40, 40, 40, 0.9); 
    color: #F6F1E9;
    padding: 40px 20px;    
 }
