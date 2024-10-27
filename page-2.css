@@ -28,7 +28,63 @@ li a:hover{
     color: gold;
     border-bottom : 2px solid gold;
 }
+* Resume Section */
+#resume {
+    background-color: black; /* Light background */
+    padding: 50px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
+.resume-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    background-color: rgba(40, 40, 40, 0.9); 
+    padding: 20px 40px;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.resume-item h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFD93D; 
+    border-bottom: 2px solid #FFD93D;
+    padding-bottom: 10px;
+}
+
+
+.experience h3, .education h3 {
+    font-size: 22px;
+    color: #FF8400;
+    margin-bottom: 10px;
+}
+
+.experience p, .education p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        grid-template-columns: 1fr; /* Stack on small screens */
+    }
+}
 
 /* Services Section */
 #services {
@@ -87,64 +143,7 @@ h2 {
     }
 }
 
-/* Resume Section */
-#resume {
-    background-color: black; /* Light background */
-    padding: 50px 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.resume-container {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px;
-    background-color: rgba(40, 40, 40, 0.9); 
-    padding: 20px 40px;
-    border-radius: 8px;
-    max-width: 800px;
-}
-
-.resume-item h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #FFD93D; 
-    border-bottom: 2px solid #FFD93D;
-    padding-bottom: 10px;
-}
-
-
-.experience h3, .education h3 {
-    font-size: 22px;
-    color: #FF8400;
-    margin-bottom: 10px;
-}
-
-.experience p, .education p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.skills-list {
-    list-style-type: none;
-}
-
-.skills-list li {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .resume-container {
-        grid-template-columns: 1fr; /* Stack on small screens */
-    }
-}
-
+/
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-items {
