@@ -28,7 +28,71 @@ li a:hover{
     color: gold;
     border-bottom : 2px solid gold;
 }
-* Resume Section */
+
+
+/* Services Section */
+#services {
+    background-color: black;
+    color: white; 
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; 
+}
+
+.services-container {
+    max-width: 1200px;
+    text-align: center; 
+    padding: 0 20px;
+}
+
+h2 {
+    color: gold; 
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; /* Space between services */
+}
+
+.service-item {
+    background-color: rgba(40, 40, 40, 0.9); 
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Lift the service card on hover */
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: gold; 
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #F6F1E9; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+/* Resume Section */
 #resume {
     background-color: black; /* Light background */
     padding: 50px 20px;
@@ -86,64 +150,6 @@ li a:hover{
     }
 }
 
-/* Services Section */
-#services {
-    background-color: black;
-    color: white; 
-    padding: 50px 0; 
-}
-
-.services-container {
-    max-width: 1200px;
-    text-align: center; 
-    padding: 0 20px;
-}
-
-h2 {
-    color: gold; 
-    font-size: 36px;
-    margin-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
-}
-
-.service-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 30px; /* Space between services */
-}
-
-.service-item {
-    background-color: rgba(40, 40, 40, 0.9); 
-    padding: 30px;
-    border-radius: 10px;
-    transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.service-item:hover {
-    transform: translateY(-10px); /* Lift the service card on hover */
-}
-
-.service-item h3 {
-    font-size: 24px;
-    color: gold; 
-    margin-bottom: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.service-item p {
-    font-size: 16px;
-    color: #F6F1E9; 
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .service-list {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-}
-
-/
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-items {
